@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Birinci Donem Tekrar</string>
+    <string name="greeting">Merhaba %1$s</string>
 </resources>

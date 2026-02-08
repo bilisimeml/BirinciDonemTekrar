@@ -31,6 +31,6 @@ class MainActivity : AppCompatActivity() {
 
     fun tikla(view: View) {
         val isim = binding.etText.text.toString()
-        binding.textView.text = "Merhaba $isim"
+        binding.textView.text = getString(R.string.greeting, isim) //"Merhaba $isim"
     }
 }
