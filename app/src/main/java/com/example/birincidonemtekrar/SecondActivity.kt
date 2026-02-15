@@ -23,5 +23,8 @@ class SecondActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val isim = intent.getStringExtra("isim")
+        binding.txtIsim.text = isim
     }
 }
