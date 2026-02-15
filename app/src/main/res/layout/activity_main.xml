@@ -23,8 +23,8 @@
 
     <EditText
         android:id="@+id/etText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="234dp"
+        android:layout_height="72dp"
         android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="Kullanıcı"
@@ -57,4 +57,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/etText"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/btnGit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="ikinciAktiviteyeGit"
+        android:text="İkinci Aktivite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 </androidx.constraintlayout.widget.ConstraintLayout>

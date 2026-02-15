@@ -1,5 +1,6 @@
 package com.example.birincidonemtekrar
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
@@ -32,5 +33,11 @@ class MainActivity : AppCompatActivity() {
     fun tikla(view: View) {
         val isim = binding.etText.text.toString()
         binding.textView.text = getString(R.string.greeting, isim) //"Merhaba $isim"
+    }
+
+    fun ikinciAktiviteyeGit(view: View) {
+        val intent = Intent(this, SecondActivity::class.java)
+        intent.putExtra("isim", binding.etText.text.toString())
+        startActivity(intent)
     }
 }
